@@ -257,7 +257,7 @@ spec:
             - name: RELATED_IMAGE_ODH_WORKBENCH_JUPYTER_DATASCIENCE_CPU_PY312_IMAGE
               value: quay.io/opendatahub/odh-workbench-jupyter-datascience-cpu-py312-ubi9@sha256:d07d06a04b0de04c3c9b23c6126c7494961225de0265f78a2fc3f3ea1b233265
             - name: RELATED_IMAGE_ODH_AI_GATEWAY_OPERATOR_IMAGE
-              value: quay.io/opendatahub/odh-ai-gateway-operator@sha256:3cc096f14524c5860c4d3309c2cf2f486262b55a95a81e33e62958fc427f5823
+              value: quay.io/yqin/odh-ai-gateway-operator:dev
             - name: RELATED_IMAGE_ODH_FMS_GUARDRAILS_ORCHESTRATOR_IMAGE
               value: quay.io/opendatahub/ta-guardrails-orchestrator@sha256:757f3c3e05fe0c40bcfa8d29d0511ddcaff640a38c4ee507696cf126009381b6
             - name: RELATED_IMAGE_ODH_KSERVE_STORAGE_INITIALIZER_IMAGE
@@ -309,9 +309,9 @@ spec:
             - name: RELATED_IMAGE_ODH_AUTORAG_IMAGE
               value: quay.io/opendatahub/odh-autorag@sha256:8143dfed0c83b37afe21f2c1dac268f10d2225e90b9d6d3eef6f5d394efbba70
             - name: RELATED_IMAGE_ODH_MAAS_API_IMAGE
-              value: quay.io/opendatahub/maas-api@sha256:dfdb18088434c4a1259d920ca80196aefb3487b7a582215f2fa0c8d4d33dfd24
+              value: quay.io/yqin/maas-api:dev
             - name: RELATED_IMAGE_ODH_MAAS_CONTROLLER_IMAGE
-              value: quay.io/opendatahub/maas-controller@sha256:84ebf72265c76ad7709fb5f5f4d9b0ba5667e905e7eb2164a7f4a73aab36a571
+              value: quay.io/yqin/maas-controller:dev
             - name: RELATED_IMAGE_ODH_MOD_ARCH_AUTOML_IMAGE
               value: quay.io/opendatahub/odh-mod-arch-automl@sha256:0cc35b62968b84271fc464d71e7efbb460c890b422364a897d40abf0e0a6f3ff
             - name: RELATED_IMAGE_ODH_PIPELINES_COMPONENTS_IMAGE
@@ -372,6 +372,10 @@ spec:
               value: quay.io/opendatahub/ds-pipelines-argo-argoexec@sha256:5a7e9beb40fdebd696ad480fc6bf44a6207e0154599d6d258f43b8545658a922
             - name: RELATED_IMAGE_ODH_TRAINER_OPERATOR_IMAGE
               value: quay.io/opendatahub/odh-trainer-operator@sha256:692a38f4858ee92f687d85625d6c9f57e5aa123da58835b66d9d94d674db1e8b
+            - name: RELATED_IMAGE_ODH_AI_GATEWAY_CONTROLLER_IMAGE
+              value: quay.io/yqin/odh-ai-gateway-controller:dev
+            - name: RELATED_IMAGE_ODH_PRAXIS_EXTPROC_IMAGE
+              value: quay.io/opendatahub/odh-praxis-extproc:odh-stable
           args:
             - --leader-elect
             - --operator-name=opendatahub

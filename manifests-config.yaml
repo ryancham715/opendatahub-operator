@@ -97,8 +97,8 @@ components:
       sourcePath: spark-operator-module/config
   aigateway:
     odh:
-      repo: opendatahub-io/ai-gateway-operator
-      ref: stable@5e1d42902b368a1669e70ca1e4184c37064ae235
+      repo: ryancham715/ai-gateway-operator
+      ref: rq-85306@2f7f09a6f0fff58b6cf1e9a81f5a60b3ba0dc296
       sourcePath: config
     rhoai:
       repo: red-hat-data-services/ai-gateway-operator
